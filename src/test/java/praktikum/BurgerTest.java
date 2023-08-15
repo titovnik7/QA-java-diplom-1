@@ -36,7 +36,8 @@ public class BurgerTest {
         Burger burger = new Burger();
         burger.addIngredient(ingredient);
         burger.removeIngredient(0);
-        assertEquals(0, burger.ingredients.size());
+        int expectedSize = 0;
+        assertEquals(expectedSize, burger.ingredients.size());
     }
 
     @Test
